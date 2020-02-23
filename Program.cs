@@ -8,7 +8,10 @@ namespace Peliculas
     public string Titulo, Pais, Director;
     public int Año;
 
-    
+    public void Imprimir()
+    {
+        Console.WriteLine(Titulo+" "+Año+" "+Pais+" "+Director);
+    }
 
     }
     class Program
@@ -27,16 +30,8 @@ namespace Peliculas
            Pelicula1.Director="Sam Raimi";
            Pelicula2.Director="Todd Phillips";
 
-            
-           Console.WriteLine(Pelicula1.Titulo);
-           Console.WriteLine(Pelicula1.Año);
-           Console.WriteLine(Pelicula1.Director);
-           Console.WriteLine(Pelicula1.Pais);
-           Console.WriteLine(Pelicula2.Titulo);
-           Console.WriteLine(Pelicula2.Año);
-           Console.WriteLine(Pelicula2.Director);
-           Console.WriteLine(Pelicula2.Pais);
-           
+           Pelicula1.Imprimir();
+           Pelicula2.Imprimir();
         }
     }
 }
