@@ -5,40 +5,10 @@ namespace Peliculas
     
     class Peliculas
     { 
-    private string Titulo, Pais, Director;
-    private int Año;
+    public string Titulo, Pais, Director;
+    public int Año;
 
-    public string getTitulo()
-    {
-        return Titulo;
-    }
-    public void setTitulo(string t)
-    {
-        Titulo=t;
-    }
-    public string getPais()
-    {
-        return Pais;
-    }
-    public void setPais(string p)
-    {
-        Pais=p;
-    }
-    public string getDirector()
-    {
-        return Director;
-    }
-    public void setDirector(string d){
-        Director=d;
-    }
-    public int getAño()
-    {
-    return Año;
-    }
-    public void setAño(int a)
-    {
-    Año=a;
-    }
+    
 
     }
     class Program
@@ -48,24 +18,24 @@ namespace Peliculas
            Peliculas Pelicula1= new Peliculas();
            Peliculas Pelicula2= new Peliculas();
 
-           Pelicula1.setTitulo("Spider-Man 2");
-           Pelicula2.setTitulo("Joker");
-           Pelicula1.setAño(2004);
-           Pelicula2.setAño(2019);
-           Pelicula1.setPais("USA");
-           Pelicula2.setPais("USA");
-           Pelicula1.setDirector("Sam Raimi");
-           Pelicula2.setDirector("Todd Phillips");
+           Pelicula1.Titulo="Spider-Man 2";
+           Pelicula2.Titulo="Joker";
+           Pelicula1.Año=2004;
+           Pelicula2.Año=2019;
+           Pelicula1.Pais="USA";
+           Pelicula2.Pais="USA";
+           Pelicula1.Director="Sam Raimi";
+           Pelicula2.Director="Todd Phillips";
 
             
-           Console.WriteLine(Pelicula1.getTitulo());
-           Console.WriteLine(Pelicula1.getAño());
-           Console.WriteLine(Pelicula1.getDirector());
-           Console.WriteLine(Pelicula1.getPais());
-           Console.WriteLine(Pelicula2.getTitulo());
-           Console.WriteLine(Pelicula2.getAño());
-           Console.WriteLine(Pelicula2.getDirector());
-           Console.WriteLine(Pelicula2.getPais());
+           Console.WriteLine(Pelicula1.Titulo);
+           Console.WriteLine(Pelicula1.Año);
+           Console.WriteLine(Pelicula1.Director);
+           Console.WriteLine(Pelicula1.Pais);
+           Console.WriteLine(Pelicula2.Titulo);
+           Console.WriteLine(Pelicula2.Año);
+           Console.WriteLine(Pelicula2.Director);
+           Console.WriteLine(Pelicula2.Pais);
            
         }
     }
